@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<head>
+  
+    <title>The mighty Egg-watch!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=McLaren&family=Rubik+Scribble&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {box-sizing: border-box}
+        .mySlides1, .mySlides2, .mySlides3 {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: #b8437b;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a grey background color */
+        .prev:hover, .next:hover {
+          background-color: #fdad4f;
+          color: white;
+        }
+        </style>
+</head>
+<body>
+             <!--Header-->
+             <img src="images/banner_header_small.png" height="164" width="640" class="center">
+    
+    
+            <!--FrontLine-->
+            <div id="buttonline">
+                <div><a href="index.html">
+                    <button class="button">HOME </button>
+                </a></div>
+    
+                <div><a href="persona.html">
+                    <button class="button">ABOUT </button>
+                </a></div>
+    
+                <div><a href="portfolio.html">
+                    <button class="button">PORTFOLIO </button>
+                </a></div>
+            </div>
+        <br>
+
+        <img src="images/banner_mighteggwatch.png" height="620" width="1920" alt="banner_manoverboard" title="Banner Man Overboard!" class="portfolio_img">
+        <h6>The mighty Egg-watch!</h6>
+        <p2>Multiplayer, Capture-the-Flag</p2>
+        <p2>Platform: Unity</p2>
+        <br>
+
+        <p>
+            Since the dawn of time itself, the "mighty Egg-Watch" has governed the garden's rhythm, providing sanctuary to caterpillars from the looming presence of the human-gods, as long as its timer ticks. Fueled by a longing for culinary excellence, these creatures engage in a fierce competition to craft the ultimate salad before the final grains of sand slip away. Amidst this saga of rivalry and cunning, only one caterpillar will ascend to triumph by earning the highest rating for their salad. Now, it's your turn to strategize, sabotage, and strive for victory in this whimsical garden battleground.</p>
+
+        <p2>For this project I am working as the Game Designer and Co-Programmer.</p2>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>PreProduction Sneak-Peak!</h3>
+
+        <div class="slideshow-container">
+        <div class="mySlides1">
+            <img src="images/sneakpeak_01.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="images/sneakpeak_02.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="images/sneakpeak_02.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="images/sneakpeak_04.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <script>
+            let slideIndex = [1,1];
+            let slideId = ["mySlides1", "mySlides2"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+            
+            function plusSlides(n, no) {
+              showSlides(slideIndex[no] += n, no);
+            }
+            
+            function showSlides(n, no) {
+              let i;
+              let x = document.getElementsByClassName(slideId[no]);
+              if (n > x.length) {slideIndex[no] = 1}    
+              if (n < 1) {slideIndex[no] = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex[no]-1].style.display = "block";  
+            }
+            </script>
+       
+        
+                <!--Bottompage-->
+                <div id="bottom">
+                    <a href="https://www.artstation.com/sleevy" class="links">
+                        <img src="images/art.png" height="50px" width="50px">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC1e3OyloQU3QOXAF8Q1d4_Q" target=_blank title="Youtube" class="links">
+                        <img src="images/youtube.png" height="50px" width="50px">
+                    </a>
+                    <a href="https://www.instagram.com/_sleevy_/?hl=en" target=_blank title="Instagram" class="links">
+                        <img src="images/instagram.png" height="50px" width="50px">
+                    </a>
+                    <a href="https://www.linkedin.com/in/emely-schadt-673b53278/" target=_blank title="LinkedIn" class="links">
+                        <img src="images/business.png" height="50px" width="50px">
+                    </a>
+                    <a href="mailto:emely.schadt@gmail.com" target=_self title="ContactMe" class="links">
+                        <img src="images/email.png" height="50px" width="50px">
+                    </a>
+                </div>
+    
+</body>
+</html>
