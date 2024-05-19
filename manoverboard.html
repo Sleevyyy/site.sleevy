@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing: border-box}
-.mySlides1, .mySlides2, .mySlides3 {display: none}
+.mySlides1, .mySlides2 {display: none}
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -83,9 +83,10 @@ img {vertical-align: middle;}
               and bring your treasure home!"</p>
 
             <br>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/OrSW2srWBnU?si=9kzgNOXoUwGin39h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="center"></iframe>
-              </div>
+            <video controls id="vid">
+                <source src="videos/GamePlay_Presentation.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
             <br>
             <br>
             <br>
@@ -116,12 +117,25 @@ img {vertical-align: middle;}
             <br>
             <br>
 
-
-        <h3>Game Design</h3>
-
-        <p2>For this Game Design and also to make things easier for my team I worked on a <a href="https://drive.google.com/file/d/1Ya6Qcepz3vmgNtF6cS12T0ZO-thKmdnx/view?usp=sharing">Game Design Document</a>
-             which was constantly being updated during our semester.</p2>
+        <h3>Showreel</h3>
+        <p2>Here you can find most of the things I did for this project!</p2>
         <br>
+        <video controls id="vid">
+            <source src="videos/ShowReel_EmelySchadt.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h3>Game Design+</h3>
+
         <p2>As a team we worked a lot on miro to develope the rough main ideas.</p2></p>
         <br>
         <div class="slideshow-container">
@@ -140,115 +154,82 @@ img {vertical-align: middle;}
           <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
           <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
         </div>
-        
         <br>
         <br>
-        <hr>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h3>Technical Art</h3>
+        <p2>For me as the Game Designer, and also to make things easier for my team, I worked on a <a href="https://drive.google.com/file/d/1Ya6Qcepz3vmgNtF6cS12T0ZO-thKmdnx/view?usp=sharing">Game Design Document</a>
+             which was constantly being updated during our semester and not visible in the Showreel.</p2>
+        <br>        
+        <p2>Our most significant mechanic, the mechanic of the ship movement in combination with the treasure chests, should allow players to manually decide, how hard they want the game to be.<br></p2>
+        <p>This is how it works:</p>
 
-        <p2>Animation and Sound implementation in Unreal Engine</p2>
-        <br>
         <div class="slideshow-container">
-        <div class="mySlides3">
-            <img src="img_band_chicago.jpg" style="width:100%">
-        </div>
+          <div class="mySlides2">
+            <img src="images/morechests.png" style="width:100%">
+          </div>
         
-        <div class="mySlides3">
-            <img src="img_band_la.jpg" style="width:100%">
-        </div>
+          <div class="mySlides2">
+            <img src="images/lesstreasure.png" style="width:100%">
+          </div>
         
-        <div class="mySlides3">
-            <img src="img_band_ny.jpg" style="width:100%">
-        </div>
-        
-        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-        </div>
-        
-        <br>
-        <br>
-        <p2>Character creation and Modelling</p2>
-        <p2>(Texture were done by Judith Greiner)</p2>
-        <br>
-        <br>
-        <div class="slideshow-container">
-        <div class="mySlides2">
-                <img src="images/doodles_slide_01.png" style="width:100%">
-            </div>
-            
-            <div class="mySlides2">
-                <img src="images/charactercreation_slide_02.png" style="width:100%">
-            </div>
-            
-            <div class="mySlides2">
-                <img src="images/oliver_slide_03.png" style="width:100%">
-            </div>
+          <div class="mySlides2">
+            <img src="images/donotsink.png" style="width:100%">
+          </div>
 
-            <div class="mySlides2">
-                <img src="images/hankmodel.gif" style="width:100%">
-            </div>
+          <div class="mySlides2">
+            <img src="images/notreasure.png" style="width:100%">
+          </div>
 
-            <div class="mySlides2">
-                <img src="images/olivermodel.gif" style="width:100%">
-            </div>
-            
-            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-            </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+          <div class="mySlides2">
+            <img src="images/forthefuture.png" style="width:100%">
+          </div>
+        
+          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
 
         <script>
-            let slideIndex = [1,1];
-            let slideId = ["mySlides1", "mySlides2", "mySlides3"]
-            showSlides(1, 0);
-            showSlides(1, 1);
-            
-            function plusSlides(n, no) {
+          let slideIndex = [1,1];
+          let slideId = ["mySlides1", "mySlides2"]
+          showSlides(1, 0);
+          showSlides(1, 1);
+          
+          function plusSlides(n, no) {
             showSlides(slideIndex[no] += n, no);
-            }
-            
-            function showSlides(n, no) {
+          }
+          
+          function showSlides(n, no) {
             let i;
             let x = document.getElementsByClassName(slideId[no]);
             if (n > x.length) {slideIndex[no] = 1}    
             if (n < 1) {slideIndex[no] = x.length}
             for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
+               x[i].style.display = "none";  
             }
             x[slideIndex[no]-1].style.display = "block";  
-            }
-        </script>
-       
+          }
+          </script>
+
+        <br>
+
         
                 <!--Bottompage-->
                 <div id="bottom">
-                    <a href="https://www.artstation.com/sleevy" class="links">
-                        <img src="images/art.png" height="50px" width="50px">
-                    </a>
-                    <a href="https://www.youtube.com/channel/UC1e3OyloQU3QOXAF8Q1d4_Q" target=_blank title="Youtube" class="links">
-                        <img src="images/youtube.png" height="50px" width="50px">
-                    </a>
-                    <a href="https://www.instagram.com/_sleevy_/?hl=en" target=_blank title="Instagram" class="links">
-                        <img src="images/instagram.png" height="50px" width="50px">
-                    </a>
-                    <a href="https://www.linkedin.com/in/emely-schadt-673b53278/" target=_blank title="LinkedIn" class="links">
-                        <img src="images/business.png" height="50px" width="50px">
-                    </a>
-                    <a href="mailto:emely.schadt@gmail.com" target=_self title="ContactMe" class="links">
-                        <img src="images/email.png" height="50px" width="50px">
-                    </a>
-                </div>
-    
+                  <a href="https://www.artstation.com/sleevy" class="links">
+                      <img src="images/art.png" height="50px" width="50px">
+                  </a>
+                  <a href="https://www.youtube.com/channel/UC1e3OyloQU3QOXAF8Q1d4_Q" target=_blank title="Youtube" class="links">
+                      <img src="images/youtube.png" height="50px" width="50px">
+                  </a>
+                  <a href="https://www.instagram.com/_sleevy_/?hl=en" target=_blank title="Instagram" class="links">
+                      <img src="images/instagram.png" height="50px" width="50px">
+                  </a>
+                  <a href="https://www.linkedin.com/in/emely-schadt-673b53278/" target=_blank title="LinkedIn" class="links">
+                      <img src="images/business.png" height="50px" width="50px">
+                  </a>
+                  <a href="mailto:emely.schadt@gmail.com" target=_self title="ContactMe" class="links">
+                      <img src="images/email.png" height="50px" width="50px">
+                  </a>
+              </div>
+  
 </body>
 </html>
