@@ -209,6 +209,14 @@ hr {
     margin-left: 10%;
     margin-right: 10%;
   }
+  #vid {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
 
 
 
