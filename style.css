@@ -217,7 +217,9 @@ hr {
     margin-right: 10%;
 
 }
-
-
+.animate__animated.animate__bounce {
+    --animate-duration: 1s;
+    --animate-repeat: 10;
+  }
 
 
