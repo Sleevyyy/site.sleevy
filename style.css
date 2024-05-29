@@ -218,8 +218,30 @@ hr {
 
 }
 .animate__animated.animate__bounce {
-    --animate-duration: 1s;
-    --animate-repeat: 10;
+    --animate-duration: 2s;
+    --animate-repeat: 50;
   }
 
+ .animate__animated.animate__shakeY {
+    --animate-duration: 2s;
+    --animate-repeat: 50;
+  }
+
+.animate__animated.animate__slideOutUp{
+    --animate-duration: 2s;
+    --animate-repeat: 50;
+}
+
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.centered:click
+{
+    --animate__slideOutUp;
+}
 
