@@ -6,14 +6,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=McLaren&family=Rubik+Scribble&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.ccontainer {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.ccontainer:hover .image {
+  animation: 
+    spin 2000ms cubic-bezier(.175, .885, .32, 1.275);
+    transition: .5s ease;
+}
+
+.ccontainer:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #ffffff;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+@keyframes spin {
+    0%, 15% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(10deg);
+	}
+}
+</style>
 
 </head>
 
 <body>
-<div class="centered">
-<a href="prehome.html"><img src="images/profile_picture.png" width="300" height="300" alt="me"></a>
-<p class="animate__animated animate__shakeY animate__repeat-2">click me!</p>
-</div>
+    <div class="ccontainer">
+        <div class="centered">
+            <a href="prehome.html"><img src="images/profile_picture.png" width="300" height="300" alt="me" class="image"></a>
+            <p class="animate__animated animate__shakeY animate__repeat-1">click me!</p>
+            </div>
+        <div class="middle">
+          <div class="text">Test</div>
+        </div>
+      </div>
+
 </body>
 </html>
 

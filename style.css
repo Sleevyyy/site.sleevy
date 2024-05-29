@@ -218,12 +218,12 @@ hr {
 
 }
 .animate__animated.animate__bounce {
-    --animate-duration: 2s;
+    --animate-duration: 10s;
     --animate-repeat: 50;
   }
 
  .animate__animated.animate__shakeY {
-    --animate-duration: 2s;
+    --animate-duration: 10s;
     --animate-repeat: 50;
   }
 
@@ -239,4 +239,5 @@ hr {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
 
