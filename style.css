@@ -223,7 +223,7 @@ hr {
   }
 
  .animate__animated.animate__shakeY {
-    --animate-duration: 10s;
+    --animate-duration: 20s;
     --animate-repeat: 50;
   }
 
@@ -231,7 +231,6 @@ hr {
     --animate-duration: 2s;
     --animate-repeat: 50;
 }
-
 
 .centered {
     position: fixed;
