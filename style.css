@@ -1,9 +1,12 @@
 
+header{
+    background-color:white;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
 body{
     background-color: white;
-    margin: 0px;
-    width: 100%;
-    height: 100%;
 }
 
 h1{
@@ -21,11 +24,13 @@ h2{
     text-align: center;
 }
 h3{
-    color: #b8437b;
+    color: whitesmoke;
     font-family: "McLaren", sans-serif;
-    font-size: 40px;
+    font-size: 30px;
+    background-color:#a11e3b;
+    border-radius: 30px;
+    padding: 10px;
     text-align: center;
-    margin-top: -60px;
 }
 h4{
     color: black;
@@ -46,42 +51,8 @@ h6{
     margin-bottom: 10px;
     margin-top: 20px;
 }
-h7{
-    color: #93326b;
-    font-family: "McLaren", sans-serif;
-    font-size: 35px;
-    text-align: center;
-    margin-bottom: 20px;
-    padding-bottom: 30px;
-}
 
-p{
-    color: #93326b;
-    font-family: "McLaren", sans-serif;
-    font-size: 30px;
-    text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-p2{
-    color: black;
-    font-family: "McLaren", sans-serif;
-    font-size: 25px;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: center;
-    display: block;
-}
 
-p3{
-    color: #93326b;
-    font-family: "McLaren", sans-serif;
-    font-size: 30px;
-    background-color: #fdad4f;
-    border-radius: 30px;
-    padding: 10px;
-    text-align: center;
-}
 
 
 a:link{
@@ -125,23 +96,20 @@ a:visited{
     transition-duration: 0.4s;
 }
 .links:hover{
-    background-color: #fdad4f;
+    background-color: orange;
     color: #a11e3b;
 }
 
 
 #buttonline{
     display: flex;
-    background-color: #fca155;
+    background-color: orange;
     align-content: center;
     justify-content: center;
     padding: 20px;
-    margin-bottom: 0px;
-}
-#buttonline_div{
-    background-color: #fca155;
-    align-items: center;
-    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 30px;
 }
 .button{
     background-color:white;
@@ -203,6 +171,14 @@ a:visited{
     margin-left: 15%;
     margin-right: 15%;
 }
+.project-background{
+    background-color:rgb(255, 237, 212);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 30px;
+}
 hr {
     border: none;
     border-top: 6px dotted #fca155;
@@ -232,6 +208,16 @@ hr {
     --animate-repeat: 50;
 }
 
+.animate__animated.animate__headShake{
+    --animate-duration: 2s;
+    --animate-repeat: 50;
+}
+
+.animate__animated.animate__rollIn{
+    --animate-duration: 0.5s;
+    --animate-repeat: 50;
+}
+
 .centered {
     position: fixed;
     top: 50%;
@@ -241,16 +227,14 @@ hr {
 
   table, th, td {
     border:1px white;
-    border-radius: 10px;
-    border-spacing: 30px;
+    border-radius: 20px;
+    border-spacing: 10px;
+    margin-left:15%;
+    margin-right: 15%;
   }
 
   th {
     background-color: #fca155;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 40px;
   }
 
   tr:nth-child(even){
@@ -260,5 +244,27 @@ hr {
   tr:last-child{
     background-color:bisque;
   }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  .flex-item-left {
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    flex: 50%;
+  }
+  
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+}
 
 
