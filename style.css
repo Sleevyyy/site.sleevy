@@ -1,4 +1,6 @@
 
+html { scroll-behavior: smooth;}
+
 header{
     background-color:white;
     margin-top: 50px;
@@ -24,10 +26,10 @@ h2{
     text-align: center;
 }
 h3{
-    color: whitesmoke;
+    color:#a11e3b;
     font-family: "McLaren", sans-serif;
     font-size: 30px;
-    background-color:#a11e3b;
+    background-color:rgb(255, 216, 165);
     border-radius: 30px;
     padding: 10px;
     text-align: center;
@@ -209,7 +211,7 @@ hr {
 }
 
 .animate__animated.animate__headShake{
-    --animate-duration: 2s;
+    --animate-duration: 5s;
     --animate-repeat: 50;
 }
 
@@ -266,5 +268,38 @@ hr {
       flex: 100%;
     }
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  .grid-item {
+    padding: 20px;
+    font-size: 30px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 
 
