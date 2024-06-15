@@ -2,10 +2,51 @@
 html { scroll-behavior: smooth;}
 
 header{
-    background-color:white;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    height: 5em;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0;
+    transition: color 0.4s ease-in-out;
 }
+header nav{
+  background-color: orange;
+  width: 100%;
+  padding: 5px;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 30px;
+  text-align: center;
+}
+header nav a{
+  font-family: "McLaren", sans-serif;
+  font-size: 20px;
+  color: #93326b;
+  transition-duration: 0.4s;
+  display:inline-block;
+}
+
+header.scrolled nav a{
+color:#fca155;
+}
+
+header.scrolled{
+background-color: #fca155;
+opacity: 0.98;
+}
+
+button{
+  background-color: white;
+  border-radius: 30px;
+  border-color: white;
+  padding: 10px;
+}
+
+.button:hover{
+  background-color:#b8437b;
+  color: white;
+}
+
 
 body{
     background-color: white;
@@ -83,7 +124,6 @@ a:visited{
     padding-bottom: 40px;
     padding-top: 15px;
     position: static;
-    bottom: 0px;
 }
 #bottom_div{
     align-items: center;
@@ -103,33 +143,6 @@ a:visited{
     color: #a11e3b;
 }
 
-
-#buttonline{
-    display: flex;
-    background-color: orange;
-    align-content: center;
-    justify-content: center;
-    padding: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 30px;
-}
-.button{
-    background-color:white;
-    border: #fca155;
-    border-radius: 30px;
-    font-family: "McLaren", sans-serif;
-    font-size: 20px;
-    color: #93326b;
-    margin-inline: 50px;
-    margin-bottom: 0px;
-    padding: 10px;
-    transition-duration: 0.4s;
-}
-.button:hover{
-    background-color:#b8437b;
-    color: white;
-}
 
 .center{
     display: block;
@@ -269,41 +282,11 @@ hr {
     }
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-  }
-  .grid-item {
-    padding: 20px;
-    font-size: 30px;
-    width: 200px;
-    height: 200px;
-    text-align: center;
-  }
+.content {
+  padding: 16px;
+}
 
-  * {
-    box-sizing: border-box;
-  }
-  
-  /* Create three equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 33.33%;
-    height: 300px; /* Should be removed. Only for demonstration */
-  }
 
-  .column:after {
-    
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
+
 
 

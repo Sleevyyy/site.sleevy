@@ -6,37 +6,28 @@
     <link rel="stylesheet" href="w3.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=McLaren&family=Rubik+Scribble&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="icon" type="image/png" href="images/pageicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 </head>
 <body>
    <div id="home">
-    <header>
-            <!--Header-->
-            <img src="images/profile_picture.png" height="300" width="300" class="center">
-            <h1 class="animate__animated animate__rollIn">Hi there!</h1>
+    <br>
 
-    </header>
+     <!--Header-->
+     <img src="images/profile_picture.png" height="300" width="300" class="center">
+     <h1 class="animate__animated animate__rollIn">Hi there!</h1>
   </div>
-                
+  <header>
+    <!--FrontLine-->
     <nav>
-            <!--FrontLine-->
-            <div id="buttonline">
-                <div><a href="#home">
-                    <button class="button">HOME </button>
-                </a></div>
-    
-                <div><a href="#portfolio">
-                    <button class="button">PORTFOLIO </button>
-                </a></div>
+        <a href="#home"> <h5 class="w3-btn">HOME</h5></a>
+        <a href="#portfolio"><h5 class="w3-btn">PORTFOLIO</h5></a>
+        <a href="#about"> <h5 class="w3-btn">ABOUT</h5></a>
+    </nav>
+</header>
 
-                <div><a href="#about">
-                  <button class="button">ABOUT </button>
-              </a></div>
-            </div>
-        </nav>
         <br>
         <br>
         <div class="project-background">
@@ -59,10 +50,10 @@
         <div class="project-background">
           <div class="w3-row-padding">
             <div class="w3-quarter">
-                <h3>The Mighty Egg-Watch!</h3>
+                <h3>Mighty Egg-Watch</h3>
                 <h6>6th Semester Project - Soon!</h6>
                 <img src="images/mighteggwatch_thumbnail.png" style="max-width:100%;height:auto;">
-                <h5>Local Multiplayer, Capture-the-Flag<br>Platform: Unity<br></h5>
+                <h5>Local Multiplayer, Party-Game<br>Platform: Unity<br></h5>
                 <div class="animate__animated animate__headShake animate__repeat-2"><h5 class="w3-btn"><a href="themightyeggwatch.html">check it out!</a></h5></div>
               </div>
           
@@ -106,7 +97,7 @@
                   <h3>Lunar Lander</h3>
                   <h6>In Cooporation with ESA</h6>
                   <img src="images/lunarlander_thumbnail.png" style="max-width:100%;height:auto;">
-                  <h5>Local Singleplayer, Mobile Research Game<br>Platform: Unity<br></h5>
+                  <h5>Mobile Research Game<br>Platform: Unity<br></h5>
                   <div class="animate__animated animate__headShake animate__repeat-2"><h5 class="w3-btn"><a href="gigglegala.html">check it out!</a></h5></div>
                 </div>
               
@@ -154,6 +145,17 @@
           <br>
           <br>
           <br>
+
+          <script>
+            function myFunction() {
+              var x = document.getElementById("");
+              if (x.className === "buttonline") {
+                x.className += " responsive";
+              } else {
+                x.className = "buttonline";
+              }
+            }
+            </script>
 
 
        
