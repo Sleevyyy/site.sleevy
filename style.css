@@ -35,9 +35,10 @@ h3{
     text-align: center;
 }
 h4{
-    color: black;
+    color: #a11e3b;
     font-family: "Rubik Scribble", sans-serif;
     font-size: 60px;
+    text-align: center;
 }
 h5{
     color: #a11e3b;
@@ -134,7 +135,6 @@ a:visited{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 10px;
     align-content: center;
     justify-content: center;
     justify-self: center;
