@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<head>
+
+<title>Moldika</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="w3.css">
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=McLaren&family=Rubik+Scribble&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/pageicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<style>
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+background-color: #f1f1f1;
+color: black;
+}
+</style>
+</head>
+<body>
+
+<a href="prehome.html"><backbutton class=".animate__animated.animate__bounce">GO BACK</backbutton></a>
+      <h1 class="center">Moldika</h1>
+      <br>
+      <br>
+      <img src="images/gigglegala_banner.png" height="620" width="1920" alt="banner_gigglegala" class="portfolio_banner">
+      <img src="images/gigglegala_characters.jpg" width="500" alt="manoverboard_screenshots" title="Gameplay Screenshots" class="center">
+      <div class="project-background">
+        <h4 class="center">Welcome to Giggla Gala, an outcome of the Global Game Jam 2024, the ultimate 4-Player Multiplayer game jam sensation!
+          Dive into a world of whimsy and laughter as each player is handed a quirky prompt and an unexpected twist. Your mission? 
+          Dress up according to your unique combination and strut your stuff! But the fun doesn't stop there – at the end of the runway, 
+          your fellow players become the fashion detectives, attempting to unravel the mystery behind your twist.
+      <br><br>In this hilarious fashion showdown, it's not just about style; it's about wit and intuition. 
+      Guess your opponents' twists correctly, and you'll earn valuable points. Giggla Gala is a riotous blend of creativity, strategy, and sheer amusement. 
+      Get ready to don the craziest ensembles, decode your friends' unexpected turns, and claim the title of the Giggla Gala fashion maven!
+    </h4>
+      </div>
+      <br>
+      <hr class="center">
+      <br>
+
+      <h2>Background</h2>
+      
+      <div class="project-background">
+      <h4>My roommates and me worked on this funny little project for 3 days!<br>
+          I was responsible for implementing the prompts and the clothes as well as for some asset creation. 
+          <br>I also did half of the character design and their animation!</h4>
+      </div>
+      <br>
+          <div class="slideshow-container">
+              <div class="mySlides1">
+                <img src="images/gigglegala_slide_01.png" style="width:100%">
+              </div>
+            
+              <div class="mySlides1">
+                <img src="images/spizzbert_animation.gif" style="width:100%">
+              </div>
+    
+                      
+              <div class="mySlides1">
+                <img src="images/gigglegala_slide_02.png" style="width:100%">
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+            <br>
+            <br>
+            <br>
+
+      <script>
+        let slideIndex = [1,1];
+        let slideId = ["mySlides1", "mySlides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+        
+        function plusSlides(n, no) {
+          showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+          let i;
+          let x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}    
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+        }
+        </script>
+      
+              <!--Bottompage-->
+              <div id="bottom">
+                  <a href="https://www.artstation.com/sleevy" class="links">
+                      <img src="images/art.png" height="50px" width="50px">
+                  </a>
+                  <a href="https://www.youtube.com/channel/UC1e3OyloQU3QOXAF8Q1d4_Q" target=_blank title="Youtube" class="links">
+                      <img src="images/youtube.png" height="50px" width="50px">
+                  </a>
+                  <a href="https://www.instagram.com/_sleevy_/?hl=en" target=_blank title="Instagram" class="links">
+                      <img src="images/instagram.png" height="50px" width="50px">
+                  </a>
+                  <a href="https://www.linkedin.com/in/emely-schadt-673b53278/" target=_blank title="LinkedIn" class="links">
+                      <img src="images/business.png" height="50px" width="50px">
+                  </a>
+                  <a href="mailto:emely.schadt@gmail.com" target=_self title="ContactMe" class="links">
+                      <img src="images/email.png" height="50px" width="50px">
+                  </a>
+              </div>
+  
+</body>
+</html>
