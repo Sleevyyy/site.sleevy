@@ -10,20 +10,22 @@ header{
     transition: color 0.4s ease-in-out;
 }
 header nav{
-  background-color: orange;
+  background-color: #c5568c;
   position: absolute;
   justify-content: center;
   display: flex;
   padding: 10px;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
   border-radius: 50px;
+  width: 80%;
 }
 header nav a{
   font-family: "McLaren", sans-serif;
   font-size: 20px;
   color: #93326b;
   transition-duration: 0.4s;
+  padding-left: 2%;
   display: inline-block;
 }
 
@@ -34,6 +36,27 @@ color:#fca155;
 header.scrolled{
 background-color: #fca155;
 opacity: 0.98;
+}
+
+backbutton{
+  position: sticky;
+  top: 10px;
+  margin-top: 2%;
+  margin-left: 1%;
+  padding: 10px;
+  transition: color 0.4s ease-in-out;
+  background-color: #fca155;
+  color: #a11e3b;
+  font: "McLaren", sans-serif;
+  font-size: 20px;
+  border-radius: 50px;
+  width: auto;
+
+}
+
+.backbutton:hover{
+  background-color:#b8437b;
+  color: white;
 }
 
 button{
@@ -155,12 +178,23 @@ a:visited{
     display: flex;
 }
 
-.portfolio_img{
-    width:80%;
+.portfolio_banner{
+    width: 80%;
     height: 80%;
     display: flex;
     margin-left: 10%;
-    margin-right: 10%;
+    margin-right: 10%
+}
+
+.portfolio_img{
+  width:200px;
+  height: 200px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {
@@ -191,15 +225,15 @@ a:visited{
     background-color:rgb(255, 237, 212);
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
-    border-radius: 30px;
-}
-hr {
-    border: none;
-    border-top: 6px dotted #fca155;
     margin-left: 10%;
     margin-right: 10%;
+    border-radius: 30px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+hr {
+    border-top: dotted #fca155;
+    max-width: 80%;
   }
   #vid {
     width: 80%;
