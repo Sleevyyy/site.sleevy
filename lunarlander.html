@@ -57,72 +57,28 @@
           <h1 class="center">Lunar Lander</h1>
           <br>
           <br>
-          <img src="images/gigglegala_banner.png" height="620" width="1920" alt="banner_gigglegala" class="portfolio_banner">
-          <img src="images/gigglegala_characters.jpg" width="500" alt="manoverboard_screenshots" title="Gameplay Screenshots" class="center">
+          <div>
+            <h4>Production: December 2022 - April 2023 || Platform: Unity || Singleplayer, Mobile Game</h4>
+          </div>
+
+          <img src="images/banner_lunarlander.png" height="620" width="1920" alt="banner_gigglegala" class="portfolio_banner">
+          <br>
           <div class="project-background">
-            <h4 class="center">Welcome to Giggla Gala, an outcome of the Global Game Jam 2024, the ultimate 4-Player Multiplayer game jam sensation!
-              Dive into a world of whimsy and laughter as each player is handed a quirky prompt and an unexpected twist. Your mission? 
-              Dress up according to your unique combination and strut your stuff! But the fun doesn't stop there – at the end of the runway, 
-              your fellow players become the fashion detectives, attempting to unravel the mystery behind your twist.
-          <br><br>In this hilarious fashion showdown, it's not just about style; it's about wit and intuition. 
-          Guess your opponents' twists correctly, and you'll earn valuable points. Giggla Gala is a riotous blend of creativity, strategy, and sheer amusement. 
-          Get ready to don the craziest ensembles, decode your friends' unexpected turns, and claim the title of the Giggla Gala fashion maven!
+            <h4 class="center">Lunar Lander is a mobile game prototype created by h_da students in cooperation with the European Space Agency (ESA). 
+              The project was created in an effort to train an AI to identify moon crators as precisely as possible for a lunar mission planned in the future.
+              We aimed to gamify this process.
         </h4>
           </div>
           <br>
           <hr class="center">
           <br>
   
-          <h2>Background</h2>
+          <h2>UI</h2>
           
           <div class="project-background">
-          <h4>My roommates and me worked on this funny little project for 3 days!<br>
-              I was responsible for implementing the prompts and the clothes as well as for some asset creation. 
-              <br>I also did half of the character design and their animation!</h4>
+          <h4>I mostly worked on the UI for our prototype!</h4>
           </div>
-          <br>
-              <div class="slideshow-container">
-                  <div class="mySlides1">
-                    <img src="images/gigglegala_slide_01.png" style="width:100%">
-                  </div>
-                
-                  <div class="mySlides1">
-                    <img src="images/spizzbert_animation.gif" style="width:100%">
-                  </div>
-        
-                          
-                  <div class="mySlides1">
-                    <img src="images/gigglegala_slide_02.png" style="width:100%">
-                  </div>
-  
-                  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-                </div>
-                <br>
-                <br>
-                <br>
-  
-          <script>
-            let slideIndex = [1,1];
-            let slideId = ["mySlides1", "mySlides2"]
-            showSlides(1, 0);
-            showSlides(1, 1);
-            
-            function plusSlides(n, no) {
-              showSlides(slideIndex[no] += n, no);
-            }
-            
-            function showSlides(n, no) {
-              let i;
-              let x = document.getElementsByClassName(slideId[no]);
-              if (n > x.length) {slideIndex[no] = 1}    
-              if (n < 1) {slideIndex[no] = x.length}
-              for (i = 0; i < x.length; i++) {
-                 x[i].style.display = "none";  
-              }
-              x[slideIndex[no]-1].style.display = "block";  
-            }
-            </script>
+          
           
                   <!--Bottompage-->
                   <div id="bottom">
