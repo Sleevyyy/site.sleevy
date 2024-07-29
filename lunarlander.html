@@ -10,46 +10,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <style>
-  * {box-sizing: border-box}
-  .mySlides1, .mySlides2 {display: none}
-  img {vertical-align: middle;}
-  
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a grey background color */
-  .prev:hover, .next:hover {
-    background-color: #f1f1f1;
-    color: black;
-  }
-  </style>
+
+   <style>
+        * {box-sizing: border-box}
+        .mySlides1 {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: #b8437b;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a grey background color */
+        .prev:hover, .next:hover {
+          background-color: #fdad4f;
+          color: white;
+        }
+        </style>
   </head>
   <body>
   
@@ -68,6 +69,83 @@
               The project was created in an effort to train an AI to identify moon crators as precisely as possible for a lunar mission planned in the future.
               We aimed to gamify this process.
         </h4>
+          </div>
+          <br>
+          <hr class="center">
+          <br>
+          <h2>Presentation at ESA</h2>
+          <div class="project-background">
+            <h4 class="center">Here you can find, what we presented to the ESA last summer! (2023)</h4>
+          </div>
+          <br>
+          
+          <div class="slideshow-container">
+            <div class="mySlides1">
+              <img src="images/ESASlide_01.png" style="width:100%">
+            </div>
+          
+            <div class="mySlides1">
+              <img src="images/ESASlide_02.png" style="width:100%">
+            </div>
+                    
+            <div class="mySlides1">
+              <img src="images/ESASlide_03.png" style="width:100%">
+            </div>
+                    
+            <div class="mySlides1">
+              <img src="images/ESASlide_04.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides1">
+              <img src="images/ESASlide_05.png" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+              <img src="images/ESASlide_06.png" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+              <img src="images/ESASlide_07.png" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+              <img src="images/ESASlide_08.png" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+              <img src="images/ESASlide_10.png" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+              <img src="images/ESASlide_11.png" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+              <img src="images/ESASlide_12.png" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+              <img src="images/ESASlide_13.png" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+              <img src="images/ESASlide_14.png" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+              <img src="images/ESASlide_15.png" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+              <img src="images/ESASlide_16.png" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+              <img src="images/ESASlide_17.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
           </div>
           <br>
           <hr class="center">
@@ -101,6 +179,31 @@
                         <img src="images/impressum.png" height="50px" width="50px">
                     </a>
                   </div>
+
+                            
+  
+  
+          <script>
+            let slideIndex = [1,1];
+            let slideId = ["mySlides1"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+            
+            function plusSlides(n, no) {
+              showSlides(slideIndex[no] += n, no);
+            }
+            
+            function showSlides(n, no) {
+              let i;
+              let x = document.getElementsByClassName(slideId[no]);
+              if (n > x.length) {slideIndex[no] = 1}    
+              if (n < 1) {slideIndex[no] = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex[no]-1].style.display = "block";  
+            }
+            </script>
       
   </body>
   </html>
